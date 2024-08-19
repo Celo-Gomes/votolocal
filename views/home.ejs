@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/home.css">
+    <title> API TRE-RJ</title>
+   
+</head>
+<body>
+    <!-- Api :  https://apps.tre-rj.jus.br/api-dados-abertos/locaisvotacao -->
+    <form action="/resultOk" method="POST">
+        <h1>API TRE-RJ GOV</h1>
+        <fieldset>
+            <legend>BUSCA LOCAL DE VOTAÇÃO</legend>
+            <label for="city">CIDADE:   </label>
+            <input type="text" name="city" id="city" value="NOVA FRIBURGO">
+            <br>
+            <label for="zone">ZONA: &nbsp;&nbsp;</label>
+            <input type="text" name="zone" id="zone"  placeholder="Não coloque 0 a esquerda">
+            <br>
+            <label for="section">SEÇÃO: &nbsp;</label>
+            <input type="text" name="section" id="section" placeholder="Não coloque 0 a esquerda">
+            <br>
+            <button type="submit"id="search">SEARCH</button>
+        </fieldset>
+    </form>
+
+    <div id="loader">
+        <div id="d1" class="element"></div>
+        <div id="d2" class="element"></div>
+        <div id="d3" class="element"></div>
+        <div id="d4" class="element"></div>
+        <div id="d5" class="element"></div>
+    </div>
+    <footer>M.gomes&copy; SolutionsTechnology.</footer>
+
+    <script src="/scripts/index.js"></script>
+</body>    
+</html>

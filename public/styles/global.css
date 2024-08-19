@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 300px;  
+    text-align: center; 
+    margin: auto;
+}
+h1{
+    margin: 20px 0 20px 0;
+    color: red;
+}
+footer{
+    font-style: italic;
+    font-size: 11px;
+    font-weight: bolder;
+    color: #cdcbcb;
+    position: relative;
+    left: 4rem;
+}

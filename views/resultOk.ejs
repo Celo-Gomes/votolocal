@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response</title>
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/resultOk.css">
+</head>
+<body>
+
+    <h1>Resultado da Busca</h1>
+    <div id="show">
+        <% if (results.length > 0) { %>  <!--chamada da variável instanciada no script para condição se necessário -->
+            <% results.forEach(function(local) { %> <!--metodo forEach para passar por todo o conteúdo-->
+                <p><strong>Município:</strong> <%= local.municipio %></p>
+                <p><strong>Bairro:</strong> <%= local.bairro %></p>
+                <p><strong>Local:</strong> <%= local.local %></p>
+                <p><strong>Endereço</strong>: <%= local.endereco %></p>
+                <p><strong>Zona:</strong> <%= local.numZona %></p>
+                <p><strong>Seções:</strong> <%= local.secoes %></p>
+                <hr>
+                <%= console.log(local.local) %>
+                <%= console.log('-------------------------') %>
+            <% }); %>
+        <% } else { %>
+            <p>Nenhum resultado encontrado.</p>
+            <%= console.log("Erro de entrada") %>
+            <%= console.log("---------------------------") %>
+        <% } %>
+    </div>
+    <footer>M.gomes&copy; SolutionsTechnology.</footer>
+    <br>
+    <button>VOLTAR</button>
+
+    <script src="/scripts/index.js"></script>
+
+</body>
+</html>

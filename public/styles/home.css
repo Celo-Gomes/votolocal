@@ -1,0 +1,78 @@
+fieldset{
+    padding: 20px; 
+}
+legend{
+    text-align: left;
+    font-style: italic;
+}
+input{
+    margin-bottom: 15px;
+    text-align: center;
+}
+#loader{
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px -50px;
+    opacity: 0;
+}
+.element{
+    width: 20px;
+    height: 20px;
+    background: rgb(85, 84, 84);
+    border-radius: 50%;
+    position: absolute;
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.animate{
+    animation: animate 2s linear infinite;
+}
+#d2{
+    animation-delay: -.4s;
+}
+#d3{
+    animation-delay: -.8s;
+}
+#d4{
+    animation-delay: -1.2s;
+}
+#d5 {
+    animation-delay: -1.6s;
+}
+
+/* @-webkit-keyframes animate{ */
+@keyframes animate{
+    0%{
+        left: 100px;
+        top: 0;
+    }
+    80%{
+        left: 0;
+        top: 0;
+    }
+    85%{
+        left: 0;
+        top: -20px;
+        width: 20px;
+        height: 20px;
+    }
+    90%{
+        width: 40px;
+        height: 15px;
+    }
+    95%{
+        left: 100px;
+        top: -20px;
+        width: 20px;
+        height: 20px;
+    }
+    100%{
+        left: 100px;
+        top: 0;
+    }
+}
