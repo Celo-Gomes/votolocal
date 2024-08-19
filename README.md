@@ -1,7 +1,7 @@
 <h1 align="center"> Local de Votação </h1>
 
 <p align="center">
-    Trata-se de um app, que informa a localização do local de votação do usuário em todo estado do Rio de Janeiro, através de dados fornecidos do título de eleitor, como cidade,a zona eleitoral e sua seção.<br>
+    Trata-se de um app, que informa o local de votação do usuário em todo estado do Rio de Janeiro, através de dados fornecidos do título de eleitor, como cidade,a zona eleitoral e sua seção.<br>
     
 </p>
 
