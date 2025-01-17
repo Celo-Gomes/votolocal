@@ -58,7 +58,7 @@ app.post('/resultOk', (req,res)=> {
 })
 
 
-app.listen('3000', ()=> console.log('** Server OK! **'))
+app.listen('3000', ()=> console.log('** Server API-trj OK! **'))
 
 
 //EXEMPLO DE RETORNO DA API
