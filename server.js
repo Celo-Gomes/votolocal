@@ -62,6 +62,7 @@ app.listen('3000', ()=> console.log('** Server API-trj OK! **'))
 
 
 //EXEMPLO DE RETORNO DA API
+//observado conflito entre numZona e numLocal...***
         // [
         //     {
         //         "numLocal":1058,
